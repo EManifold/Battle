@@ -11,6 +11,6 @@ feature 'Testing name form' do
     fill_in "player_1_name", :with => 'Ellie'
     fill_in "player_2_name", :with => 'Shaf'
     click_on 'Submit'
-    expect(page).to have_content 'Ellie vs Shaf'
+    expect(page).to have_content "Ellie vs. Shaf"
   end
 end
